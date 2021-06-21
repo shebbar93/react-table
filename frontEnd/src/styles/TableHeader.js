@@ -12,12 +12,14 @@ const TableHeader = ({ title }) => {
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    fontsize: 22px;
+    font-size: 22px;
     color: rgba(0, 0, 0, 0.87);
-    backgroundcolor: #ffffff;
-    minheight: 56px;
-    paddingleft: 16px;
-    paddingright: 8px;
+    background-color: #ffffff;
+    min-height: 56px;
+    // padding-left: 16px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom:28px
   `;
 
   const Title = styled.div`

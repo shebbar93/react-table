@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import ControlledTabs from "./ControlledTabs";
 import GroupsRT from "./GroupsRT";
 import GroupsRTC from "./GroupsRTC";
 import MembersRT from "./MembersRT";
@@ -11,10 +12,10 @@ const Home = () => {
       <div className="py-3">
         <Row>
           <Col md={6}>
-            <GroupsRT />
+            <GroupsRT title="Group Data"/>
           </Col>
           <Col md={6}>
-            <MembersRT />
+            <ControlledTabs />
           </Col>
         </Row>
       </div>

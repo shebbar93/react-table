@@ -10,13 +10,13 @@ export const PaginationWrapper = styled.nav`
   padding-right: 8px;
 //   padding-left: 8px;
   width: 100%;
-  fontsize: 13px;
-  minheight: 56px;
-  bordertopstyle: solid;
-  bordertopwidth: 1px;
+  font-size: 13px;
+  min-height: 56px;
+  // border-top-style: solid;
+  border-top-width: 1px;
   color: rgb(100, 100, 100);
-  backgroundcolor: #ffffff;
-  bordertopcolor: rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  border-top-color: rgba(0, 0, 0, 0.12);
 `;
 
 export const Button = styled.button`
@@ -30,7 +30,7 @@ export const Button = styled.button`
   padding: 8px;
   cursor: pointer;
   transition: 0.4s;
-  backgroundcolor: transparent;
+  background-color: transparent;
 //   color: rgba(0,0,0,.54);
 //   fill: rgba(0,0,0,.54);
 `;

@@ -33,7 +33,7 @@ import TableHeader from "../styles/TableHeader";
 import { ThemeProvider } from "styled-components";
 import { createStyles } from "../styles/style";
 
-const ReactTable = () => {
+const ReactTable = ({title}) => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => MOCK_DATA, []);
   const customStyles = {};
@@ -109,7 +109,7 @@ const ReactTable = () => {
 
   return (
     <>
-      <TableHeader title="Members" />
+      {title && <TableHeader title={title}/>}
       <div className="table-wrapper">
         {/* <ThemeProvider theme={currentTheme}> */}
 
