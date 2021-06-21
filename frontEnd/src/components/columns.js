@@ -24,6 +24,7 @@ export const COLUMNS = [
     Header: "Date of Birth",
     Footer: "Date of Birth",
     accessor: "date_of_birth",
+    disableFilters: true,
     Cell: ({ value }) => {
       return format(new Date(value), "dd/MM/yyyy");
     },
@@ -36,6 +37,7 @@ export const COLUMNS = [
   {
     Header: "Phone",
     Footer: "Phone",
+    disableFilters: true,
     accessor: "phone",
   },
   {
@@ -45,6 +47,7 @@ export const COLUMNS = [
   },
   {
     Header: "Age",
+    disableFilters: true,
     Footer: "Age",
     accessor: "age",
   },

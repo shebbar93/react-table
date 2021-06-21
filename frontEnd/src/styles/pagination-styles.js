@@ -35,7 +35,7 @@ export const Button = styled.button`
 //   fill: rgba(0,0,0,.54);
 `;
 
-const Span = styled.span`
+export const Span = styled.span`
   flex-shrink: 1;
   user-select: none;
 `;

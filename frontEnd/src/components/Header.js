@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <Navbar bg='dark' expand='lg' variant='dark' collapseOnSelect>
-        <Container>
+        <>
           <Navbar.Brand href='/'>Dashboard</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
@@ -20,7 +20,7 @@ const Header = () => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </>
       </Navbar>
     </header>
   );

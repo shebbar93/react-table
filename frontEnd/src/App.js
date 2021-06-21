@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <main className='py-3'>
-        <Container>
+        <Container fluid>
           <Home/>
         </Container>
       </main>

@@ -14,11 +14,11 @@ const Home = () => {
             <GroupsRT />
           </Col>
           <Col md={6}>
-            <MembersRTC />
+            <MembersRT />
           </Col>
         </Row>
       </div>
-      <div className="py-3">
+      {/* <div className="py-3">
         <Row>
           <Col md={6}>
             <GroupsRTC />
@@ -27,7 +27,7 @@ const Home = () => {
             <MembersRTC />
           </Col>
         </Row>
-      </div>
+      </div> */}
     </>
   );
 };
