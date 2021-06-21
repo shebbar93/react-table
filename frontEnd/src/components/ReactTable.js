@@ -93,7 +93,9 @@ const ReactTable = ({title}) => {
     usePagination
   );
   const { pageIndex, pageSize } = state;
-
+  const rowClickHandler = (e) => {
+    console.log(e)
+  }
   const select = (
     <Select
       onChange={(e) => setPageSize(Number(e.target.value))}
@@ -113,7 +115,7 @@ const ReactTable = ({title}) => {
       <div className="table-wrapper">
         {/* <ThemeProvider theme={currentTheme}> */}
 
-        <Table {...getTableProps()} striped bordered hover size="sm">
+        <Table {...getTableProps()} bordered hover size="sm">
           <thead>
             {headerGroups.map((headerGroup) => (
               <tr {...headerGroup.getHeaderGroupProps()}>
@@ -143,7 +145,7 @@ const ReactTable = ({title}) => {
             {page.map((row) => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()}>
+                <tr {...row.getRowProps()} style={{cursor : "pointer"}} onClick={e => rowClickHandler(row)}>
                   {row.cells.map((cell) => {
                     return (
                       <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
